@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="./stylus.css">
+    <title>Calculator</title>
+</head>
+
+<body class="flex justify-center items-center h-screen mx-1">
+
+    <div class="container mx-auto bg-gray-900 w-96 p-3 rounded-xl content-center box-border">
+
+        <h1 class="text-5xl text-white m-2 text-center">Calculator</h1>
+
+        <div class="grid px-2 py-5 bg-gray-900">
+            <input class="w-full py-1 px-2 rounded-xl placeholder:text-black text-5xl" type="text" id="input"
+                placeholder="0">
+        </div>
+            
+        <div class="grid grid-cols-4 justify-center p-2 gap-3 font-bold text-3xl">
+                <button class='py-4 bg-white col-span-2 rounded-xl hover:bg-gray-300 duration-500 hover:scale-105 clear'
+                    id="btn" value="clear">AC</button>
+                <button
+                    class='py-4 bg-blue-500 rounded-xl hover:bg-blue-600 duration-500 hover:scale-105 hover:text-white remove'
+                    id="btn" value="x"><i class="fa-solid fa-delete-left"></i></button>
+                <button
+                    class='bg-orange-500 rounded-xl hover:bg-orange-600 duration-500 hover:scale-105 hover:text-white keys'
+                    id="btn" value="/">÷</button>
+
+                <button
+                    class='py-4 bg-blue-500 rounded-xl hover:bg-blue-600 duration-500 hover:scale-105 hover:text-white keys'
+                    id="btn" value="7">7</button>
+                <button
+                    class='py-4 bg-blue-500 rounded-xl hover:bg-blue-600 duration-500 hover:scale-105 hover:text-white keys'
+                    id="btn" value="8">8</button>
+                <button
+                    class='py-4 bg-blue-500 rounded-xl hover:bg-blue-600 duration-500 hover:scale-105 hover:text-white keys'
+                    id="btn" value="9">9</button>
+                <button
+                    class='py-4 bg-orange-500 rounded-xl hover:bg-orange-600 duration-500 hover:scale-105 hover:text-white keys'
+                    id="btn" value="*">x</button>
+
+                <button
+                    class='py-4 bg-blue-500 rounded-xl hover:bg-blue-600 duration-500 hover:scale-105 hover:text-white keys'
+                    id="btn" value="4">4</button>
+                <button
+                    class='py-4 bg-blue-500 rounded-xl hover:bg-blue-600 duration-500 hover:scale-105 hover:text-white keys'
+                    id="btn" value="5">5</button>
+                <button
+                    class='py-4 bg-blue-500 rounded-xl hover:bg-blue-600 duration-500 hover:scale-105 hover:text-white keys'
+                    id="btn" value="6">6</button>
+                <button
+                    class='py-4 bg-orange-500 rounded-xl hover:bg-orange-600 duration-500 hover:scale-105 hover:text-white keys'
+                    id="btn" value="-">-</button>
+
+                <button
+                    class='py-4 bg-blue-500 rounded-xl hover:bg-blue-600 duration-500 hover:scale-105 hover:text-white keys'
+                    id="btn" value="1">1</button>
+                <button
+                    class='py-4 bg-blue-500 rounded-xl hover:bg-blue-600 duration-500 hover:scale-105 hover:text-white keys'
+                    id="btn" value="2">2</button>
+                <button
+                    class='py-4 bg-blue-500 rounded-xl hover:bg-blue-600 duration-500 hover:scale-105 hover:text-white keys'
+                    id="btn" value="3">3</button>
+                <button
+                    class='py-4 bg-orange-500 rounded-xl hover:bg-orange-600 duration-500 hover:scale-105 hover:text-white keys'
+                    id="btn" value="+">+</button>
+                <button
+                    class='py-4 py-4 bg-blue-500 rounded-xl hover:bg-blue-600 duration-500 hover:scale-105 hover:text-white hover:bg-blue-600 duration-500 hover:scale-105 hover:text-white col-span-2 keys'
+                    id="btn" value="0">0</button>
+                <button class='py-4 bg-white rounded-xl hover:bg-gray-300 duration-500 hover:scale-105 keys' id="btn"
+                    value=".">.</button>
+                <button
+                    class='py-4 bg-orange-500 rounded-xl hover:bg-orange-600 duration-500 hover:scale-105 hover:text-white'
+                    id="resultado" value="=">=</button>
+        </div>
+        
+    </div>
+
+</body>
+
+<script src="./script.js"></script>
+
+</html>
